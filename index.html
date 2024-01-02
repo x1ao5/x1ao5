@@ -7,6 +7,67 @@
     <title>WalletConnect Modal Demo</title>
 </head>
 <body>
-    <!-- 在這裡插入你的 @walletconnect/modal 代碼 -->
+    <!--
+    
+    import WalletConnectProvider from '@walletconnect/web3-provider';
+import Web3Modal from 'web3modal';
+const providerOptions = {
+  walletconnect: {
+    package: WalletConnectProvider,
+    options: {
+      infuraId: '',//以太坊连接必填
+      // rpc: {
+      //   56: 'https://bsc-dataseed1.binance.org',
+      // },
+      // network: 56,
+    },
+  },
+};
+
+const web3Modal = new Web3Modal({
+  network: 'mainnet',
+  cacheProvider: true,
+  providerOptions,
+});
+
+const subscribeProvider = async (provider, newWeb3) => {
+  if (!provider.on) {
+    return;
+  }
+
+  //断开连接
+  provider.on('close', () => {
+    sessionStorage.removeItem('myAddress');
+    localStorage.clear();
+    console.log('断开连接')
+    closeApp(newWeb3);
+  });
+
+  //切换账号
+  provider.on('accountsChanged', async (accounts) => {
+    let address = await accounts[0];
+    console.log('切换账号')
+    sessionStorage.setItem('myAddress', address);
+  });
+};
+
+const closeApp = async (newWeb3) => {
+  if (newWeb3 && newWeb3.currentProvider && newWeb3.currentProvider.close) {
+    await newWeb3.currentProvider.close();
+  }
+  await newWeb3.clearCachedProvider();
+};
+
+const getAccount = async () => {
+  const provider = await web3Modal.connect();
+  await web3Modal.toggleModal();
+  await subscribeProvider(provider, newWeb3);
+  const newWeb3 = new Web3(provider);
+  return newWeb3;
+};
+
+export default getAccount;
+
+ -->
 </body>
 </html>
