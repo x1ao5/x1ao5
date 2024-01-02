@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Webpage</title>
+  <title>幹幹幹</title>
   <style><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +12,16 @@
   <title>My Simple Webpage</title>
   <style>
     body {
-      display: flex;
-      flex-direction: column; /* 將排列方向設為垂直，使元素垂直排列 */
-      align-items: flex-start; /* 對齊到左邊 */
-      justify-content: flex-start; /* 對齊到上面 */
+      position: relative; /* 設定 body 為相對定位的參考點 */
       height: 100vh;
       margin: 20px; /* 添加一些外邊距，以避免按鈕貼緊邊緣 */
     }
 
     /* 樣式設定按鈕外觀 */
     .button {
+      position: absolute; /* 設定按鈕為絕對定位 */
+      top: 0; /* 將按鈕置於頂部 */
+      left: 0; /* 將按鈕置於左邊 */
       display: inline-block;
       padding: 10px 20px;
       font-size: 18px;
@@ -32,6 +32,7 @@
       border: 1px solid #ffa239;
       border-radius: 5px;
       cursor: pointer;
+      margin-bottom: 10px; /* 添加一些底邊距，以分隔按鈕 */
     }
 
     /* 滑鼠懸停時的按鈕樣式 */
@@ -42,16 +43,15 @@
 </head>
 <body>
 
-  <!-- 將 h1 元素轉換為 a 元素，並添加 class 為 button -->
   <a href="https://twitter.com/02x1ao5" class="button">
     Hello Everyone!
   </a>
   
-  <a href="https://your-airdrop-link.com" class="button">
+  <a href="https://twitter.com/02x1ao5" class="button">
     Airdrop
   </a>
 
-  <p>This is additional text below the buttons.</p>
+  <p>本站為聲明x1ao5所有</p>
 
 </body>
 </html>
