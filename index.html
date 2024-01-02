@@ -4,24 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>幹幹幹</title>
-  <style><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Webpage</title>
   <style>
     body {
-      position: relative; /* 設定 body 為相對定位的參考點 */
+      position: relative;
       height: 100vh;
-      margin: 20px; /* 添加一些外邊距，以避免按鈕貼緊邊緣 */
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     /* 樣式設定按鈕外觀 */
     .button {
-      position: absolute; /* 設定按鈕為絕對定位 */
-      top: 0; /* 將按鈕置於頂部 */
-      left: 0; /* 將按鈕置於左邊 */
       display: inline-block;
       padding: 10px 20px;
       font-size: 18px;
@@ -32,22 +25,37 @@
       border: 1px solid #ffa239;
       border-radius: 5px;
       cursor: pointer;
-      margin-bottom: 10px; /* 添加一些底邊距，以分隔按鈕 */
+      margin-bottom: 10px;
     }
 
     /* 滑鼠懸停時的按鈕樣式 */
     .button:hover {
       background-color: #ffa239;
     }
+
+    /* Hello Everyone! 保持在原位置 */
+    #helloButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Airdrop 按鈕放在左上角 */
+    #airdropButton {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   </style>
 </head>
 <body>
 
-  <a href="https://twitter.com/02x1ao5" class="button">
+  <a href="https://twitter.com/02x1ao5" class="button" id="helloButton">
     Hello Everyone!
   </a>
   
-  <a href="https://twitter.com/02x1ao5" class="button">
+  <a href="https://twitter.com/02x1ao5" class="button" id="airdropButton">
     Airdrop
   </a>
 
