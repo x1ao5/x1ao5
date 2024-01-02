@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WalletConnect Modal Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Webpage</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <!--
-    
-    ...
-web3wallet.on("auth_request", async (authRequest) => {
-  const { verifyContext } = authRequest
-  const validation = verifyContext.verified.validation // can be VALID, INVALID or UNKNOWN
-  const origin = verifyContext.verified.origin // the actual verified origin of the request
-  const isScam = verifyContext.verified.isScam // true if the domain is flagged as malicious
 
-  // if the domain is flagged as malicious, you can should warn the user as they may lose their funds - check the `Threat` case for more info
-  if(isScam) {
-    // show a warning screen to the user
-    // and proceed only if the user accepts the risk
-  }
+  <h1>Hello Everyone!</h1>
 
-  switch(validation) {
-    case "VALID":
-      // proceed with the request - check the `Domain match` case for more info
-      break
-    case "INVALID":
-      // show a warning dialog to the user - check the `Mismatch` case for more info
-      // and proceed only if the user accepts the risk
-      break
-    case "UNKNOWN":
-      // show a warning dialog to the user - check the `Unverified` case for more info
-      // and proceed only if the user accepts the risk
-      break
-  }
-
-  // respond to the request after the user has approved the request
-  await web3wallet.respondAuthRequest(...)
-})
-
- -->
 </body>
 </html>
