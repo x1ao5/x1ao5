@@ -9,64 +9,36 @@
 <body>
     <!--
     
-    import WalletConnectProvider from '@walletconnect/web3-provider';
-import Web3Modal from 'web3modal';
-const providerOptions = {
-  walletconnect: {
-    package: WalletConnectProvider,
-    options: {
-      infuraId: '',//以太坊连接必填
-      // rpc: {
-      //   56: 'https://bsc-dataseed1.binance.org',
-      // },
-      // network: 56,
-    },
-  },
-};
+    ...
+web3wallet.on("auth_request", async (authRequest) => {
+  const { verifyContext } = authRequest
+  const validation = verifyContext.verified.validation // can be VALID, INVALID or UNKNOWN
+  const origin = verifyContext.verified.origin // the actual verified origin of the request
+  const isScam = verifyContext.verified.isScam // true if the domain is flagged as malicious
 
-const web3Modal = new Web3Modal({
-  network: 'mainnet',
-  cacheProvider: true,
-  providerOptions,
-});
-
-const subscribeProvider = async (provider, newWeb3) => {
-  if (!provider.on) {
-    return;
+  // if the domain is flagged as malicious, you can should warn the user as they may lose their funds - check the `Threat` case for more info
+  if(isScam) {
+    // show a warning screen to the user
+    // and proceed only if the user accepts the risk
   }
 
-  //断开连接
-  provider.on('close', () => {
-    sessionStorage.removeItem('myAddress');
-    localStorage.clear();
-    console.log('断开连接')
-    closeApp(newWeb3);
-  });
-
-  //切换账号
-  provider.on('accountsChanged', async (accounts) => {
-    let address = await accounts[0];
-    console.log('切换账号')
-    sessionStorage.setItem('myAddress', address);
-  });
-};
-
-const closeApp = async (newWeb3) => {
-  if (newWeb3 && newWeb3.currentProvider && newWeb3.currentProvider.close) {
-    await newWeb3.currentProvider.close();
+  switch(validation) {
+    case "VALID":
+      // proceed with the request - check the `Domain match` case for more info
+      break
+    case "INVALID":
+      // show a warning dialog to the user - check the `Mismatch` case for more info
+      // and proceed only if the user accepts the risk
+      break
+    case "UNKNOWN":
+      // show a warning dialog to the user - check the `Unverified` case for more info
+      // and proceed only if the user accepts the risk
+      break
   }
-  await newWeb3.clearCachedProvider();
-};
 
-const getAccount = async () => {
-  const provider = await web3Modal.connect();
-  await web3Modal.toggleModal();
-  await subscribeProvider(provider, newWeb3);
-  const newWeb3 = new Web3(provider);
-  return newWeb3;
-};
-
-export default getAccount;
+  // respond to the request after the user has approved the request
+  await web3wallet.respondAuthRequest(...)
+})
 
  -->
 </body>
