@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Simple Webpage</title>
+  <style><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Webpage</title>
   <style>
     body {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column; /* 將排列方向設為垂直，使元素垂直排列 */
+      align-items: flex-start; /* 對齊到左邊 */
+      justify-content: flex-start; /* 對齊到上面 */
       height: 100vh;
-      margin: 0;
+      margin: 20px; /* 添加一些外邊距，以避免按鈕貼緊邊緣 */
     }
 
     /* 樣式設定按鈕外觀 */
@@ -22,14 +29,14 @@
       text-decoration: none;
       background-color: #ffa239;
       color: #fff;
-      border: 1px solid #4CAF50;
+      border: 1px solid #ffa239;
       border-radius: 5px;
       cursor: pointer;
     }
 
     /* 滑鼠懸停時的按鈕樣式 */
     .button:hover {
-      background-color: #45a049;
+      background-color: #ffa239;
     }
   </style>
 </head>
@@ -39,6 +46,12 @@
   <a href="https://twitter.com/02x1ao5" class="button">
     Hello Everyone!
   </a>
+  
+  <a href="https://your-airdrop-link.com" class="button">
+    Airdrop
+  </a>
+
+  <p>This is additional text below the buttons.</p>
 
 </body>
 </html>
