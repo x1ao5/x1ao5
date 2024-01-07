@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>測試</title>
+  <title>My Simple Webpage</title>
   <style>
     body {
       position: relative;
@@ -11,6 +11,7 @@
       margin: 20px;
       display: flex;
       flex-direction: column;
+      align-items: center; /* 將元素對齊至中央 */
     }
 
     /* 樣式設定按鈕外觀 */
@@ -20,9 +21,9 @@
       font-size: 18px;
       text-align: center;
       text-decoration: none;
-      background-color: #ffa239;
+      background-color: #4CAF50;
       color: #fff;
-      border: 1px solid #ffa239;
+      border: 1px solid #4CAF50;
       border-radius: 5px;
       cursor: pointer;
       margin-bottom: 10px;
@@ -30,7 +31,7 @@
 
     /* 滑鼠懸停時的按鈕樣式 */
     .button:hover {
-      background-color: #ffa239;
+      background-color: #45a049;
     }
 
     /* Hello Everyone! 保持在原位置 */
@@ -47,19 +48,28 @@
       top: 0;
       left: 0;
     }
+
+    /* 新增文字在正中央最下方 */
+    #bottomText {
+      position: absolute;
+      bottom: 80px;
+    }
   </style>
 </head>
 <body>
 
-  <a href="https://twitter.com/02x1ao5" class="button" id="helloButton">
+  <a href="https://your-link.com" class="button" id="helloButton">
     Hello Everyone!
   </a>
-  
-  <a href="https://twitter.com/02x1ao5" class="button" id="airdropButton">
+
+  <a href="https://your-airdrop-link.com" class="button" id="airdropButton">
     Airdrop
   </a>
 
-  <p>本站為聲明x1ao5所有</p>
+  <p>123</p>
+
+  <!-- 新增文字在正中央最下方 -->
+  <p id="bottomText">Copyright © 2024 X1ao5 Capital — 保留所有權利。</p>
 
 </body>
 </html>
