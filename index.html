@@ -22,9 +22,9 @@
       font-size: 18px;
       text-align: center;
       text-decoration: none;
-      background-color: #4CAF50;
+      background-color: #FFC78E;
       color: #fff;
-      border: 1px solid #4CAF50;
+      border: 1px solid #fff;
       border-radius: 5px;
       cursor: pointer;
       margin-bottom: 10px;
@@ -35,43 +35,81 @@
       background-color: #FFEEDD;
     }
 
-    /* Hello Everyone! 保持在原位置 */
-    #helloButton {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
     /* Airdrop 按鈕放在左上角 */
     #airdropButton {
       position: absolute;
-      top: 0;
-      left: 0;
+      top:  35%;
+      left: 28%;
+      font-size: 18px; /* 調整字體大小 */
+      font-family: Arial, sans-serif; /* 其他樣式 */
+      font-weight: bold; /* 粗體 */
+      color: #000000;
     }
 
-    /* 新增文字在正中央最下方 */
-    #bottomText {
+    #推特DC購買 {
       position: absolute;
-      bottom: 80px;
+      top:  35%;
+      left: 38%;
+      font-size: 18px; /* 調整字體大小 */
+      font-family: Arial, sans-serif; /* 其他樣式 */
+      font-weight: bold; /* 粗體 */
+      color: #000000;
     }
+
+    /* 移動 "洨伍茲本" 到屏幕中央 */
+    p {
+      position: absolute;
+      top: 22%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+/* 新增文字在正中央最下方 */
+  #bottomText {
+     position: absolute;
+     top: 90%;
+     left: 50%;
+     transform: translate(-50%, 50%); /* 使用這個 transform 來調整元素的位置 */
+      font-size: 18px; /* 調整字體大小 */
+    }
+
+    #bottomText1 {
+     position: absolute;
+     top: 90%;
+     left: 40%;
+     transform: translate(-50%, 50%); /* 使用這個 transform 來調整元素的位置 */
+      font-size: 18px; /* 調整字體大小 */
+    }
+
+        /* 設置圖片寬度 */
+    #img {
+      width: 200px;
+      margin-top: 170px; /* 調整上邊距 */
+      margin-bottom: 30px; /* 調整下邊距 */
+      margin-left: 39%; /* 將左邊距設置為自動，使圖片居中 */
+      margin-right: auto; /* 將右邊距設置為自動，使圖片居中 */
+    }
+
   </style>
 </head>
 <body>
 
-  <a href="https://your-link.com" class="button" id="helloButton">
-    Hello Everyone!
+  <a href="https://x1ao5.my.canva.site/" class="custom-link" id="airdropButton">
+    AIRDROP
   </a>
 
-  <a href="https://your-airdrop-link.com" class="button" id="airdropButton">
-    Airdrop
+  <a href="https://x1ao5" class="custom-link" id="推特DC購買">
+    推特DC購買
   </a>
 
-  <p>123</p>
+  <p>洨伍茲本</p>
+
+  <img id="img" src="https://i.imgur.com/bTNe9k8.png" alt="Description of the image">
 
   <!-- 新增文字在正中央最下方 -->
   <p id="bottomText">Copyright © 2024 X1ao5 Capital — 保留所有權利。</p>
 
 </body>
 </html>
-
