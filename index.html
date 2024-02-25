@@ -174,7 +174,29 @@
       top: 10px;
       right: 10px;
     }
-    
+
+        /* 按鈕樣式 */
+    .custom-button-containe {
+        padding: 10px 20px;
+        background-color: #007bff; /* 按鈕背景顏色 */
+        color: white; /* 文字顏色 */
+        border: none; /* 去除邊框 */
+        border-radius: 5px; /* 圓角 */
+        cursor: pointer;
+        transition: background-color 0.3s; /* 添加過渡效果 */
+    }
+
+    /* 滑鼠懸停時的按鈕樣式 */
+    .custom-button:hover {
+        background-color: #0056b3; /* 滑鼠懸停時的背景顏色 */
+    }
+
+    /* 移動按鈕位置 */
+    .custom-button-container {
+        position: fixed; /* 固定在頁面上 */
+        bottom: 20px; /* 距離底部的距離 */
+        right: 20px; /* 距離右側的距離 */
+    }
   </style>
 </head>
 <body>
@@ -203,6 +225,11 @@
             iframe.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     </script>
+
+  <!-- 按鈕連結 -->
+  <div class="custom-button-container">
+    <a href="https://zora.co/collect/zora:0x8997ef1419e4a0d9c873e9d95f5d14a495f83401/2?referrer=0xb694a38be2a9FDd8bb199f3158b9C701747A0a8a" class="custom-button">Zora Mint</a>
+  </div>
   
     <!-- 嵌入連結圖片 -->
     <a href="https://discord.gg/NCyhZxCETC">
