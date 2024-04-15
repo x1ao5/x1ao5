@@ -16,25 +16,6 @@
       align-items: center; /* 將元素對齊至中央 */
       background-color: #FFEEDD; /* 修改背景顏色為 #FFEEDD */
     }
-    /* 樣式設定按鈕外觀 */
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 18px;
-      text-align: center;
-      text-decoration: none;
-      background-color: #FFC78E;
-      color: #fff;
-      border: 1px solid #fff;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-
-    /* 滑鼠懸停時的按鈕樣式 */
-    .button:hover {
-      background-color: #FFEEDD;
-    }
 
     #airdrop {
       position: absolute;
@@ -46,7 +27,7 @@
       color: #000000;
     }
 
-    #推特DC購買 {
+    #X5CAPITAL首席藝術總監 {
       position: absolute;
       top:  35%;
       left: 38%;
@@ -75,22 +56,16 @@
       font-size: 18px; /* 調整字體大小 */
     }
 
-    #bottomText1 {
-     position: absolute;
-     top: 90%;
-     left: 40%;
-     transform: translate(-50%, 50%); /* 使用這個 transform 來調整元素的位置 */
-      font-size: 18px; /* 調整字體大小 */
-    } 
+    #img {
+      position: absolute;
+      width: 250px;
+      top: 22%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-  #img {
-    position: absolute; /* 將圖片設置為絕對位置 */
-    width: 200px;
-    top: 170px; /* 距離其父元素頂部的距離 */
-    left: 39%; /* 距離其父元素左側的距離 */
-    margin-top: 0; /* 可以刪除 margin-top 屬性 */
-    margin-left: 0; /* 可以刪除 margin-left 屬性 */
- }
     /* 設置圖片大小和位置 */
     #img1 {
      width: 45px; /* 設置圖片寬度 */
@@ -146,78 +121,25 @@
      border-radius: 50%; /* 將圖片設置為圓形 */
     }
 
+    #img蕉神 {
+     width: 45px; /* 設置圖片寬度 */
+     height: auto; /* 保持高度與寬度的比例 */
+     position: absolute; /* 設置圖片絕對位置 */
+     top: 0%; /* 設置圖片距離頂部的距離 */
+     left: 21%; /* 設置圖片距離左側的距離 */
+     border-radius: 50%; /* 將圖片設置為圓形 */
+    }
+
    .custom-iframe {
      position: absolute;
      top: 110%;
      left: -2.5%;
     }
 
-/* 按鈕樣式bera mint */
-.custom-button {
-    position: absolute;
-    top: 0%; /* 從視窗頂部的距離 */
-    left: 82.5%; /* 讓按鈕水平置中 */
-    transform: translateX(-50%); /* 將按鈕水平置中 */
-    background-color: #35353B; 
-    border: none;
-    color: white;
-    padding: 6px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 0px 0px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
-}
-    /* 滑鼠懸停時的樣式 */
-    .custom-button:hover {
-        background-color: #414141; /* 滑鼠懸停時的背景顏色 */
-    }
-
-
-    /* 使 iframe 放在右上角 */
-    .iframe-container {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-    }
-
-    /* 移動按鈕位置 */
-    .custom-button-container {
-    position: absolute;
-    top: 0%; /* 從視窗頂部的距離 */
-    left: 75.5%; /* 讓按鈕水平置中 */
-    transform: translateX(-50%); /* 將按鈕水平置中 */
-    background-color: #35353B;
-    border: none;
-    color: white;
-    padding: 6px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    margin: 0px 0px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
-    white-space: nowrap; /* 禁止文字換行 */
-    }
-    /* 滑鼠懸停時的樣式 */
-    .custom-button-container:hover {
-        background-color: #414141; /* 滑鼠懸停時的背景顏色 */
-    }
-    
   </style>
 </head>
 <body>
 
-  <!-- 将 iframe 放在右上角 -->
-<div class="iframe-container">
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2C2NSK3hd4YN4zxZ6660kH?utm_source=generator" width="230" height="102" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
   <!-- 嵌入的 iframe -->
   <iframe class="custom-iframe"
     src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x29Da3f5d884437687adbc6086F1C9F401fE3BbFB&chain=%7B%22name%22%3A%22Base%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F8453.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22base%22%2C%22chainId%22%3A8453%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22base%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmW5Vn15HeRkScMfPcW12ZdZcC2yUASpu6eCsECRdEmjjj%2Fbase-512.png%22%2C%22width%22%3A512%2C%22height%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=f29b1fd75107705ebba722cd859ac8bd&theme=light&primaryColor=purple"
@@ -227,9 +149,6 @@
     frameborder="0"
     ></iframe>
 
-  <!-- 按鈕 -->
-  <button class="custom-button" onclick="scrollToIframe()">Bera Mint</button>
-
     <script>
         function scrollToIframe() {
             // 取得 iframe 元素
@@ -238,48 +157,48 @@
             iframe.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     </script>
-
-  <!-- 按鈕連結 -->
-  <div class="custom-button-container">
-    <a href="https://zora.co/collect/zora:0x8997ef1419e4a0d9c873e9d95f5d14a495f83401/2?referrer=0xb694a38be2a9FDd8bb199f3158b9C701747A0a8a" class="custom-button-container">Zora Mint</a>
-  </div>
   
     <!-- 嵌入連結圖片 -->
-    <a href="https://discord.gg/NCyhZxCETC">
+    <a href="https://twitter.com/xiaowuziben" title="推特">
       <img id="img1" src="https://img.cryptorank.io/coins/60x60.berachain1681996075164.png" alt="Description of the image">
     </a>
 
-    <a href="https://twitter.com/nacl_x1ao5">
+    <a href="https://twitter.com/nacl_x1ao5" title="小五">
       <img id="imgx1ao5" src="https://pbs.twimg.com/profile_images/1758399565131304960/23iCA-W2_400x400.jpg" alt="Description of the image">
     </a>
 
-    <a href="https://twitter.com/zxchahahaha">
+    <a href="https://twitter.com/zxchahahaha" title="耶總">
       <img id="imgyee" src="https://pbs.twimg.com/profile_images/1675706326532640770/buCFYei7_400x400.jpg" alt="Description of the image">
     </a>
 
-    <a href="https://twitter.com/DouBao02">
+    <a href="https://twitter.com/DouBao02" title="美肌">
       <img id="imgmiji" src="https://pbs.twimg.com/profile_images/1487371579705094147/eSHlmZch_400x400.jpg" alt="Description of the image">
     </a>
 
-    <a href="https://twitter.com/Akiryou0206">
+    <a href="https://twitter.com/Akiryou0206" title="A老師">
       <img id="imga" src="https://pbs.twimg.com/profile_images/1630548842637852674/DLoRVcLn_400x400.jpg" alt="Description of the image">
     </a>
 
-    <a href="https://twitter.com/kiseiju1119">
+    <a href="https://twitter.com/kiseiju1119" title="K老師">
       <img id="imgk" src="https://pbs.twimg.com/profile_images/1718696948046417920/KgclmZ2d_400x400.jpg" alt="Description of the image">
+    </a>
+
+    <a href="https://twitter.com/cassfinchx" title="藝術總監蕉哥">
+      <img id="img蕉神" src="https://pbs.twimg.com/profile_images/701849262913499136/gCmdESkb_400x400.jpg" alt="Description of the image">
     </a>
   
   <a href="https://docs.google.com/spreadsheets/d/1HWUOvM-QahpEQmZItqCW3s3fex5AjJORStmjoh3mjXw/edit#gid=0" class="custom-link" id="airdrop">
     AIRDROP
   </a>
 
-  <a href="https://market.x1ao5.xyz/" class="custom-link" id="推特DC購買">
-    推特DC購買火速加微信Ppingu1122
+  <a id="X5CAPITAL首席藝術總監">
+    X5 CAPITAL首席藝術總監 
+    蕉神
   </a>
+  <!-- 洨伍茲本 -->
+  <p></p>
 
-  <p>洨伍茲本</p>
-
-  <img id="img" src="https://i.imgur.com/bTNe9k8.png" alt="Description of the image">
+  <img id="img" src="https://cdn.discordapp.com/attachments/1208600218619347055/1229426529159741541/X5C2.png?ex=662fa3ae&is=661d2eae&hm=b9239782b955539fdfe17bef67f64753bf319a91e15f44b99741bfc45b38c0db&" alt="Description of the image">
 
   <!-- 新增文字在正中央最下方 -->
   <p id="bottomText">Copyright © 2024 X1ao5 Capital — 保留所有權利。</p>
