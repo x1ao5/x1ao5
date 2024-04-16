@@ -36,6 +36,15 @@
       font-weight: bold; /* 粗體 */
       color: #000000;
     }
+    #L0Talk {
+      position: absolute;
+      top:  130%;
+      left: 60%;
+      font-size: 50px; /* 調整字體大小 */
+      font-family: Arial, sans-serif; /* 其他樣式 */
+      font-weight: bold; /* 粗體 */
+      color: #000000;
+    }
 
     /* 移動 "洨伍茲本" 到屏幕中央 */
     p {
@@ -61,6 +70,16 @@
       width: 250px;
       top: 22%;
       left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    #imgL0 {
+      position: absolute;
+      width: 200px;
+      top: 160%;
+      left: 80%;
       transform: translate(-50%, -50%);
       font-size: 28px;
       font-weight: bold;
@@ -161,20 +180,11 @@
   <!-- 嵌入的 iframe -->
   <iframe class="custom-iframe"
     src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x29Da3f5d884437687adbc6086F1C9F401fE3BbFB&chain=%7B%22name%22%3A%22Base%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F8453.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22base%22%2C%22chainId%22%3A8453%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22base%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmW5Vn15HeRkScMfPcW12ZdZcC2yUASpu6eCsECRdEmjjj%2Fbase-512.png%22%2C%22width%22%3A512%2C%22height%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=f29b1fd75107705ebba722cd859ac8bd&theme=light&primaryColor=purple"
-    width="1050px"
-    height="550px"
+    width="950px"
+    height="500px"
     style="max-width:55%;"
     frameborder="0"
     ></iframe>
-
-    <script>
-        function scrollToIframe() {
-            // 取得 iframe 元素
-            var iframe = document.querySelector('.custom-iframe');
-            // 將畫面捲動到 iframe 的位置
-            iframe.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    </script>
   
     <!-- 嵌入連結圖片 -->
     <a href="https://twitter.com/xiaowuziben" title="推特">
@@ -205,7 +215,7 @@
       <img id="img蕉神" src="https://pbs.twimg.com/profile_images/701849262913499136/gCmdESkb_400x400.jpg" alt="Description of the image">
     </a>
 
-    <a href="https://twitter.com/zxcsad145" title="操雞掰">
+    <a href="https://twitter.com/zxcsad145" title="帶單老師 王波波 你說的對這就是王波波 多空雙賺">
       <img id="imgwangbbobo" src="https://pbs.twimg.com/profile_images/1772826202220507136/D3FinK2j_400x400.jpg" alt="Description of the image">
     </a>
 
@@ -218,14 +228,22 @@
   </a>
 
   <a id="X5CAPITAL首席藝術總監">
-    X5 CAPITAL首席藝術總監 
-    蕉神
+    X5 CAPITAL首席藝術總監<br> 
+            蕉神
   </a>
+
+  <a id="L0Talk">
+    meji:好小伍我們來做L0好不好<br>
+    小五:好
+  </a>
+
   <!-- 洨伍茲本 -->
   <p></p>
 
   <img id="img" src="https://cdn.discordapp.com/attachments/1208600218619347055/1229426529159741541/X5C2.png?ex=662fa3ae&is=661d2eae&hm=b9239782b955539fdfe17bef67f64753bf319a91e15f44b99741bfc45b38c0db&" alt="Description of the image">
 
+  <img id="imgL0" src="https://cdn.discordapp.com/attachments/1208600218619347055/1229692672961150996/layerzero.png?ex=66309b8b&is=661e268b&hm=2a80cc2c7d288c65a36306796bb1eb07225cffc52db2802b031c37baa988e2e0&" alt="Description of the image">
+  
   <!-- 新增文字在正中央最下方 -->
   <p id="bottomText">Copyright © 2024 X1ao5 Capital — 保留所有權利。</p>
   <script type="module" src="main.js"></script>
