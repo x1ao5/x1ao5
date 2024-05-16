@@ -1,45 +1,35 @@
+/* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-#main-content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
+.marquee-container {
     width: 100%;
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee img {
+    width: 200px; /* 调整图片的宽度 */
+    margin-right: 10px; /* 调整图片之间的间距 */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
