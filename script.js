@@ -1,1 +1,6 @@
-// You can add JavaScript code here if needed
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const marquee = document.querySelector('.marquee');
+    const clone = marquee.cloneNode(true);
+    marquee.parentElement.appendChild(clone);
+});
