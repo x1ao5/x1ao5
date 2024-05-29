@@ -4,7 +4,7 @@ Discord：https://discord.gg
 
 Twitter推特：https://twitter.com/02_x1ao5
 
-https://warpcast.com/x1ao5
+warpcast：https://warpcast.com/x1ao5
 
 **x1ao5 資訊**
 ---------------------------
