@@ -227,10 +227,32 @@
      transform: translate(-50%, -50%);
      max-width: 150px; /* 修改這裡來設置最大寬度 */
     }
+
+        /* 新的容器類名 */
+        .iframe-container-dextswap {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100vh; /* 使容器的高度為視口高度 */
+        }
+
+        .custom-iframe {
+            width: 400px;
+            height: 420px;
+            border: none; /* 移除邊框 */
+        }
     
   </style>
 </head>
 <body>
+
+    <!-- 使用新的容器類名 -->
+    <div class="iframe-container-dextswap">
+        <iframe id="dextswap-aggregator-widget"
+            title="DEXTswap Aggregator"
+            class="custom-iframe"
+            src="https://www.dextools.io/widget-aggregator/cn/swap/eth/0x9ebb0895bd9c7c9dfab0d8d877c66ba613ac98ea"></iframe>
+    </div>
 
   <div class="gif-sakula">
     <img src="https://i.imgur.com/6rxr2Pb.gif" alt="Description of the GIF">
