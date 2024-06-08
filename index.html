@@ -229,12 +229,13 @@
     }
 
         /* 新的容器類名 */
-        .iframe-container-dextswap {
-            display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
-            height: 100vh; /* 使容器的高度為視口高度 */
-        }
+   .iframe-container-dextswap {
+     position: relative; /* 使用相對定位 */
+     top: 300%; /* 從頂部偏移50px */
+     left: 50px; /* 從左側偏移50px */
+     width: 100%; /* 使容器寬度為100% */
+     text-align: center; /* 使容器內部內容居中 */
+}
 
         .custom-iframe1 {
             width: 400px;
