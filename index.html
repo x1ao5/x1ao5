@@ -311,6 +311,15 @@
             top: 260%; /* 距离页面顶部的距离 */
             left: 20%; /* 距离页面左侧的距离 */
         }
+
+    #embed-container {
+      position: relative; /* 可以改為 absolute, fixed 或 sticky，視需求而定 */
+      top: 50px;          /* 調整距離頁面頂部的位置 */
+      left: 100px;         /* 調整距離頁面左邊的位置 */
+      width: 100%;         /* 設置寬度 */
+      max-width: 600px;    /* 設置最大寬度 */
+      margin: 0 auto;      /* 將容器置中 */
+    }
     
   </style>
 </head>
@@ -444,6 +453,16 @@
        <iframe src="https://zora.co/collect/base:0x1e1ad3d381bc0ccea5e44c29fb1f7a0981b97f37/1/embed?referrer=0xb694a38be2a9FDd8bb199f3158b9C701747A0a8a" style="border:0;background-color:transparent;position:absolute;inset:0" width="100%" height="100%" allowtransparency="true" allowfullscreen="true" sandbox="allow-pointer-lock allow-same-origin allow-scripts allow-popups"></iframe>
      </div>
      <a href="https://zora.co/collect/base:0x1e1ad3d381bc0ccea5e44c29fb1f7a0981b97f37/1" style="padding:12px;text-decoration:none;color:#b3b3b3;font-family:'Inter',system-ui;font-size:10px;line-height:12px;font-style:normal;font-weight:400">Base x Doodles on Zora</a>
+  </div>
+
+  <div id="embed-container">
+    <polymarket-market-embed
+      market="will-fenerbahce-beat-union-saint-gilloise"
+      volume="true"
+      chart="false"
+      theme="dark"
+      creator="0xmeji"
+    ></polymarket-market-embed>
   </div>
 
   <!-- 洨伍茲本圖片放置區 -->
