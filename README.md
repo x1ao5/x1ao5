@@ -2,7 +2,7 @@
 ---------------------------
 Discord：https://discord.gg
 
-Twitter推特：https://twitter.com/02_x1ao5
+Twitter推特：https://twitter.com/
 
 warpcast：https://warpcast.com/x1ao5
 
