@@ -1,12 +1,12 @@
-**x1ao5 區塊鏈手冊**
+**x5**
 ---------------------------
 Discord：https://discord.gg
 
 Twitter推特：https://twitter.com/
 
-warpcast：https://warpcast.com/x1ao5
+warpcast：https://warpcast.com/
 
-**x1ao5 資訊**
+**x5 資訊**
 ---------------------------
 ->白皮書:
 https://gitbook.io
